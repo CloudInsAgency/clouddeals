@@ -1,20 +1,6 @@
 /**
  * CloudDeals — Weekly Deals Data File
- * =====================================
- * Update this file every Monday to refresh the deals page.
- * Just change the ASIN, title, price, category, and image for each product.
- *
- * HOW TO UPDATE:
- * 1. Find a great deal on Amazon
- * 2. Copy the ASIN from the URL: amazon.com/dp/[ASIN]
- * 3. Save the product image to assets/images/ in your GitHub repo
- * 4. Update the entry below with the new filename
- * 5. Commit to GitHub — page updates instantly
- *
- * CATEGORIES: smart-home | electronics | audio | ereader
- *
- * IMAGE FILES: saved in assets/images/ folder in your GitHub repo
- *
+ * Update this file every Monday to swap products.
  * Last updated: March 29, 2026
  */
 
@@ -35,7 +21,7 @@ const DEALS = [
     tag:      "⚡ Best Value",
     tagClass: "tag-blue",
     category: "electronics",
-    image:    "../assets/images/amazon_fire_tv_stick_4K.jpg"
+    image:    "../assets/images/amazon_fire tv_stick 4K.jpg"
   },
   {
     asin:     "B0CHWRXH8B",
@@ -84,7 +70,7 @@ const DEALS = [
   },
   {
     asin:     "B0D6SX8VLQ",
-    title:    "Echo Dot Max (2025) — Built for Alexa+, 3x Bass, Graphite",
+    title:    "Echo Dot Max (2025) — Built for Alexa+, 3x Bass",
     price:    "$99.99",
     tag:      "🆕 Newest Model",
     tagClass: "tag-blue",
