@@ -2,20 +2,18 @@
  * CloudDeals — Weekly Deals Data File
  * =====================================
  * Update this file every Monday to refresh the deals page.
- * Just change the ASIN, title, price, and category for each product.
- * The page renders automatically from this data.
+ * Just change the ASIN, title, price, category, and image for each product.
  *
  * HOW TO UPDATE:
  * 1. Find a great deal on Amazon
  * 2. Copy the ASIN from the URL: amazon.com/dp/[ASIN]
- * 3. Update the entry below
- * 4. Commit to GitHub — page updates instantly
+ * 3. Save the product image to assets/images/ in your GitHub repo
+ * 4. Update the entry below with the new filename
+ * 5. Commit to GitHub — page updates instantly
  *
  * CATEGORIES: smart-home | electronics | audio | ereader
  *
- * SVG ICONS: echo-dot | fire-stick | airpods | kindle |
- *            ring-doorbell | roomba | echo-show | echo-max | fire-tablet |
- *            echo-studio | headphones | laptop | camera | speaker
+ * IMAGE FILES: saved in assets/images/ folder in your GitHub repo
  *
  * Last updated: March 29, 2026
  */
@@ -23,12 +21,12 @@
 const DEALS = [
   {
     asin:     "B09B8V1LZ3",
-    title:    "Echo Dot (5th Gen, 2022) Smart Speaker with Alexa",
+    title:    "Echo Dot (5th Gen) Smart Speaker with Alexa",
     price:    "$49.99",
     tag:      "🔥 Top Seller",
     tagClass: "tag-orange",
     category: "smart-home",
-    icon:     "echo-dot"
+    image:    "../assets/images/echo-dot.jpg"
   },
   {
     asin:     "B0F7Z4QZTT",
@@ -37,7 +35,7 @@ const DEALS = [
     tag:      "⚡ Best Value",
     tagClass: "tag-blue",
     category: "electronics",
-    icon:     "fire-stick"
+    image:    "../assets/images/amazon_fire_tv_stick_4K.jpg"
   },
   {
     asin:     "B0CHWRXH8B",
@@ -46,7 +44,7 @@ const DEALS = [
     tag:      "🎧 Popular",
     tagClass: "tag-green",
     category: "audio",
-    icon:     "airpods"
+    image:    "../assets/images/apple_airpods_pro.jpg"
   },
   {
     asin:     "B0CFPJYX7P",
@@ -55,7 +53,7 @@ const DEALS = [
     tag:      "📚 Editor's Pick",
     tagClass: "tag-blue",
     category: "ereader",
-    icon:     "kindle"
+    image:    "../assets/images/amazon_kindle_paperwhite.jpg"
   },
   {
     asin:     "B08CKHPP52",
@@ -64,16 +62,16 @@ const DEALS = [
     tag:      "🏠 Smart Home",
     tagClass: "tag-orange",
     category: "smart-home",
-    icon:     "ring-doorbell"
+    image:    "../assets/images/ring_video_wired_doorbell.jpg"
   },
   {
     asin:     "B0DX6KZR9T",
     title:    "iRobot Roomba 105 Vac Robot Vacuum — LiDAR Navigation",
-    price:    "$199.99",
-    tag:      "🤖 New Model",
+    price:    "$149.00",
+    tag:      "🤖 50% Off",
     tagClass: "tag-green",
     category: "electronics",
-    icon:     "roomba"
+    image:    "../assets/images/irobot_roomba_105_vac.jpg"
   },
   {
     asin:     "B09B2SBHQK",
@@ -82,7 +80,7 @@ const DEALS = [
     tag:      "📺 Smart Display",
     tagClass: "tag-orange",
     category: "smart-home",
-    icon:     "echo-show"
+    image:    "../assets/images/amazon_echo_show_5.jpg"
   },
   {
     asin:     "B0D6SX8VLQ",
@@ -91,16 +89,16 @@ const DEALS = [
     tag:      "🆕 Newest Model",
     tagClass: "tag-blue",
     category: "audio",
-    icon:     "echo-max"
+    image:    "../assets/images/amazon_echo_dot_max.jpg"
   },
   {
     asin:     "B0BL5XPDR6",
-    title:    "Fire HD 10 (2023) 10.1\" Full HD Tablet — 32 GB, Ocean",
+    title:    "Fire HD 10 (2023) 10.1\" Full HD Tablet — 32 GB",
     price:    "$139.99",
     tag:      "💻 Best Tablet Deal",
     tagClass: "tag-green",
     category: "electronics",
-    icon:     "fire-tablet"
+    image:    "../assets/images/amazon_fire_hd.jpg"
   }
 ];
 
