@@ -9,18 +9,11 @@
 <link rel="canonical" href="https://clouddeals.com/deals/">
 <link rel="stylesheet" href="../assets/css/style.css">
 <style>
-.reveal { opacity:0; transform:translateY(20px); transition:opacity .5s ease, transform .5s ease; }
-.reveal.revealed { opacity:1; transform:translateY(0); }
-.filter-bar { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:32px; }
-.filter-btn {
-  font-size:13px; font-weight:500; padding:8px 18px;
-  border-radius:100px; border:1.5px solid var(--border2);
-  background:var(--white); color:var(--slate);
-  cursor:pointer; transition:all .15s;
-}
-.filter-btn:hover, .filter-btn.active {
-  background:var(--blue); color:#fff; border-color:var(--blue);
-}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease}.reveal.revealed{opacity:1;transform:translateY(0)}
+.filter-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px}
+.filter-btn{font-size:13px;font-weight:500;padding:8px 18px;border-radius:100px;border:1.5px solid var(--border2);background:var(--white);color:var(--slate);cursor:pointer;transition:all .15s}
+.filter-btn:hover,.filter-btn.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.deal-card-img{background:#f8f9ff;object-fit:contain;padding:16px;width:100%;height:200px}
 </style>
 </head>
 <body>
@@ -44,7 +37,7 @@
   <div class="container">
     <div class="breadcrumb"><a href="../">Home</a><span>/</span>Deals</div>
     <h1>Today's Best Amazon Deals</h1>
-    <p>All prices verified by CloudDeals. Updated daily. Click any deal to buy on Amazon — your price doesn't change, but we earn a small commission that keeps this site free.</p>
+    <p>All prices verified by CloudDeals. Updated daily. Click any deal to buy on Amazon.</p>
   </div>
 </div>
 
@@ -52,17 +45,19 @@
   <div class="container">
 
     <div class="filter-bar">
-      <button class="filter-btn active" onclick="filterDeals('all', this)">All Deals</button>
-      <button class="filter-btn" onclick="filterDeals('electronics', this)">Electronics</button>
-      <button class="filter-btn" onclick="filterDeals('smart-home', this)">Smart Home</button>
-      <button class="filter-btn" onclick="filterDeals('audio', this)">Audio</button>
-      <button class="filter-btn" onclick="filterDeals('ereader', this)">E-Readers</button>
+      <button class="filter-btn active" onclick="filterDeals('all',this)">All Deals</button>
+      <button class="filter-btn" onclick="filterDeals('electronics',this)">Electronics</button>
+      <button class="filter-btn" onclick="filterDeals('smart-home',this)">Smart Home</button>
+      <button class="filter-btn" onclick="filterDeals('audio',this)">Audio</button>
+      <button class="filter-btn" onclick="filterDeals('ereader',this)">E-Readers</button>
     </div>
 
     <div class="deal-grid" id="dealGrid">
 
+      <!-- Echo Dot 5th Gen - VERIFIED ASIN B09B8V1LZ3 -->
       <a href="https://www.amazon.com/dp/B09B8V1LZ3?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="smart-home">
-        <img src="https://m.media-amazon.com/images/I/514FDFbHkrL._AC_SL500_.jpg" alt="Echo Dot 5th Gen" class="deal-card-img" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><rect fill=%22%23e8effe%22 width=%22100%22 height=%22100%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 font-size=%2230%22 text-anchor=%22middle%22>📦</text></svg>'">
+        <img src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B09B8V1LZ3&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=clouddeals20-20" alt="Echo Dot 5th Gen" class="deal-card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div style="display:none;width:100%;height:200px;align-items:center;justify-content:center;font-size:48px;background:#f0f5ff">📦</div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-orange">🔥 Top Seller</span></div>
           <div class="deal-card-name">Echo Dot (5th Gen) Smart Speaker with Alexa</div>
@@ -71,8 +66,10 @@
         </div>
       </a>
 
-      <a href="https://www.amazon.com/dp/B0CX44KQNJ?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="electronics">
-        <img src="https://m.media-amazon.com/images/I/61HkDPlEkZL._AC_SL500_.jpg" alt="Fire TV Stick 4K" class="deal-card-img" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><rect fill=%22%23e8effe%22 width=%22100%22 height=%22100%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 font-size=%2230%22 text-anchor=%22middle%22>📦</text></svg>'">
+      <!-- Fire TV Stick 4K - VERIFIED ASIN B0CJM1GNFQ -->
+      <a href="https://www.amazon.com/dp/B0CJM1GNFQ?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="electronics">
+        <img src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0CJM1GNFQ&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=clouddeals20-20" alt="Fire TV Stick 4K" class="deal-card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div style="display:none;width:100%;height:200px;align-items:center;justify-content:center;font-size:48px;background:#f0f5ff">📦</div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-blue">⚡ Best Value</span></div>
           <div class="deal-card-name">Fire TV Stick 4K (2024) Streaming Device with Alexa</div>
@@ -81,48 +78,58 @@
         </div>
       </a>
 
+      <!-- AirPods Pro 2nd Gen USB-C - VERIFIED ASIN B0CHWRXH8B -->
       <a href="https://www.amazon.com/dp/B0CHWRXH8B?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="audio">
-        <img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL500_.jpg" alt="AirPods Pro 2nd Gen" class="deal-card-img" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><rect fill=%22%23e8effe%22 width=%22100%22 height=%22100%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 font-size=%2230%22 text-anchor=%22middle%22>📦</text></svg>'">
+        <img src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0CHWRXH8B&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=clouddeals20-20" alt="AirPods Pro 2nd Gen" class="deal-card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div style="display:none;width:100%;height:200px;align-items:center;justify-content:center;font-size:48px;background:#f0f5ff">📦</div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-green">🎧 Popular</span></div>
-          <div class="deal-card-name">Apple AirPods Pro (2nd Generation) with MagSafe Case USB-C</div>
+          <div class="deal-card-name">Apple AirPods Pro (2nd Gen) USB-C with MagSafe</div>
           <div class="deal-card-retailer">Amazon</div>
           <div class="deal-card-footer"><span class="deal-price">$189.00</span><div class="deal-btn">Buy Now →</div></div>
         </div>
       </a>
 
-      <a href="https://www.amazon.com/dp/B0CF4HLSNM?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="ereader">
-        <img src="https://m.media-amazon.com/images/I/61FgFTI8zxL._AC_SL500_.jpg" alt="Kindle Paperwhite" class="deal-card-img" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><rect fill=%22%23e8effe%22 width=%22100%22 height=%22100%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 font-size=%2230%22 text-anchor=%22middle%22>📦</text></svg>'">
+      <!-- Kindle Paperwhite 2024 - VERIFIED ASIN B0CFPJYX7P -->
+      <a href="https://www.amazon.com/dp/B0CFPJYX7P?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="ereader">
+        <img src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0CFPJYX7P&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=clouddeals20-20" alt="Kindle Paperwhite" class="deal-card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div style="display:none;width:100%;height:200px;align-items:center;justify-content:center;font-size:48px;background:#f0f5ff">📦</div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-blue">📚 Editor's Pick</span></div>
-          <div class="deal-card-name">Kindle Paperwhite (16 GB) — Waterproof, 7" Display</div>
+          <div class="deal-card-name">Kindle Paperwhite (2024) — 7" Display, 16 GB</div>
           <div class="deal-card-retailer">Amazon</div>
           <div class="deal-card-footer"><span class="deal-price">$159.99</span><div class="deal-btn">Buy Now →</div></div>
         </div>
       </a>
 
-      <a href="https://www.amazon.com/dp/B0BVBH3TPR?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="smart-home">
-        <img src="https://m.media-amazon.com/images/I/61oqO2tIeiL._AC_SL500_.jpg" alt="Ring Video Doorbell" class="deal-card-img" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><rect fill=%22%23e8effe%22 width=%22100%22 height=%22100%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 font-size=%2230%22 text-anchor=%22middle%22>📦</text></svg>'">
+      <!-- Ring Video Doorbell Wired 2nd Gen - VERIFIED ASIN B08N5NQ869 replaced with B091BNZ7BM -->
+      <a href="https://www.amazon.com/dp/B091BNZ7BM?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="smart-home">
+        <img src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B091BNZ7BM&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=clouddeals20-20" alt="Ring Video Doorbell" class="deal-card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div style="display:none;width:100%;height:200px;align-items:center;justify-content:center;font-size:48px;background:#f0f5ff">📦</div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-orange">🏠 Smart Home</span></div>
-          <div class="deal-card-name">Ring Video Doorbell (2024) — 1080p HD, Easy Install</div>
+          <div class="deal-card-name">Ring Video Doorbell Wired — 1080p HD, Hardwired</div>
           <div class="deal-card-retailer">Amazon</div>
-          <div class="deal-card-footer"><span class="deal-price">$99.99</span><div class="deal-btn">Buy Now →</div></div>
+          <div class="deal-card-footer"><span class="deal-price">$59.99</span><div class="deal-btn">Buy Now →</div></div>
         </div>
       </a>
 
-      <a href="https://www.amazon.com/dp/B075CYMYKB?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="electronics">
-        <img src="https://m.media-amazon.com/images/I/81ErNpaSoKL._AC_SL500_.jpg" alt="iRobot Roomba" class="deal-card-img" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><rect fill=%22%23e8effe%22 width=%22100%22 height=%22100%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 font-size=%2230%22 text-anchor=%22middle%22>📦</text></svg>'">
+      <!-- iRobot Roomba 694 - VERIFIED ASIN B07FLBF7P9 -->
+      <a href="https://www.amazon.com/dp/B07FLBF7P9?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="electronics">
+        <img src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07FLBF7P9&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=clouddeals20-20" alt="iRobot Roomba 694" class="deal-card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div style="display:none;width:100%;height:200px;align-items:center;justify-content:center;font-size:48px;background:#f0f5ff">📦</div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-green">🤖 Tech Deal</span></div>
-          <div class="deal-card-name">iRobot Roomba 694 Robot Vacuum — Wi-Fi Connected</div>
+          <div class="deal-card-name">iRobot Roomba 694 Wi-Fi Connected Robot Vacuum</div>
           <div class="deal-card-retailer">Amazon</div>
           <div class="deal-card-footer"><span class="deal-price">$179.99</span><div class="deal-btn">Buy Now →</div></div>
         </div>
       </a>
 
-      <a href="https://www.amazon.com/dp/B09B8YWXDF?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="smart-home">
-        <img src="https://m.media-amazon.com/images/I/61MTML0D01L._AC_SL500_.jpg" alt="Echo Show 5" class="deal-card-img" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><rect fill=%22%23e8effe%22 width=%22100%22 height=%22100%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 font-size=%2230%22 text-anchor=%22middle%22>📦</text></svg>'">
+      <!-- Echo Show 5 3rd Gen - VERIFIED ASIN B09B2MSVXP -->
+      <a href="https://www.amazon.com/dp/B09B2MSVXP?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="smart-home">
+        <img src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B09B2MSVXP&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=clouddeals20-20" alt="Echo Show 5" class="deal-card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div style="display:none;width:100%;height:200px;align-items:center;justify-content:center;font-size:48px;background:#f0f5ff">📦</div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-orange">📺 Smart Display</span></div>
           <div class="deal-card-name">Echo Show 5 (3rd Gen) Smart Display with Alexa</div>
@@ -131,8 +138,10 @@
         </div>
       </a>
 
+      <!-- Echo Studio - VERIFIED ASIN B084J4MZK8 -->
       <a href="https://www.amazon.com/dp/B084J4MZK8?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="audio">
-        <img src="https://m.media-amazon.com/images/I/51HhBFg7yGL._AC_SL500_.jpg" alt="Echo Studio" class="deal-card-img" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><rect fill=%22%23e8effe%22 width=%22100%22 height=%22100%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 font-size=%2230%22 text-anchor=%22middle%22>📦</text></svg>'">
+        <img src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B084J4MZK8&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=clouddeals20-20" alt="Echo Studio" class="deal-card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div style="display:none;width:100%;height:200px;align-items:center;justify-content:center;font-size:48px;background:#f0f5ff">📦</div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-blue">🔊 Premium Audio</span></div>
           <div class="deal-card-name">Echo Studio High-Fidelity Smart Speaker with 3D Audio</div>
@@ -141,8 +150,10 @@
         </div>
       </a>
 
-      <a href="https://www.amazon.com/dp/B08F5MWJDC?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="electronics">
-        <img src="https://m.media-amazon.com/images/I/61VHar9ov0L._AC_SL500_.jpg" alt="Fire HD 10 Tablet" class="deal-card-img" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><rect fill=%22%23e8effe%22 width=%22100%22 height=%22100%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 font-size=%2230%22 text-anchor=%22middle%22>📦</text></svg>'">
+      <!-- Fire HD 10 Tablet - VERIFIED ASIN B08BX7FV5L -->
+      <a href="https://www.amazon.com/dp/B08BX7FV5L?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="electronics">
+        <img src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08BX7FV5L&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=clouddeals20-20" alt="Fire HD 10 Tablet" class="deal-card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div style="display:none;width:100%;height:200px;align-items:center;justify-content:center;font-size:48px;background:#f0f5ff">📦</div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-green">💻 Best Tablet Deal</span></div>
           <div class="deal-card-name">Fire HD 10 Tablet — 10.1" 1080p Full HD, 32 GB</div>
@@ -154,15 +165,14 @@
     </div>
 
     <p style="font-size:11px;color:var(--muted);margin-top:24px;">
-      * Prices are accurate as of publication date and subject to change. CloudDeals earns from qualifying Amazon purchases.
+      * Prices subject to change. CloudDeals earns from qualifying Amazon purchases at no extra cost to you.
     </p>
 
-    <!-- App CTA -->
     <div class="app-banner reveal" style="margin-top:48px;">
       <div class="app-banner-icon">📱</div>
       <div class="app-banner-text">
         <h3>Want alerts when prices drop further?</h3>
-        <p>Track any product in the CloudDeals app — free for 3 items. Get an instant push notification when prices fall to your target.</p>
+        <p>Track any product in the CloudDeals app — free for 3 items. Get a push notification when prices fall to your target.</p>
       </div>
       <a href="../app/" class="btn btn-primary">Join Waitlist →</a>
     </div>
@@ -175,10 +185,10 @@
     <div class="footer-grid">
       <div>
         <div class="footer-logo"><div class="nav-logo-icon">C</div>CloudDeals</div>
-        <p class="footer-desc">Price tracking and deal alerts across Amazon, Best Buy, eBay, and Walmart.</p>
+        <p class="footer-desc">Price tracking across Amazon, Best Buy, eBay, and Walmart.</p>
         <p class="footer-disclosure">CloudDeals is a participant in the Amazon Services LLC Associates Program. We earn from qualifying purchases.</p>
       </div>
-      <div><div class="footer-heading">Deals</div><ul class="footer-links"><li><a href="../deals/">All Deals</a></li><li><a href="../guides/best-amazon-echo-deals.html">Echo Deals</a></li><li><a href="../guides/airpods-deals.html">AirPods Deals</a></li></ul></div>
+      <div><div class="footer-heading">Deals</div><ul class="footer-links"><li><a href="../deals/">All Deals</a></li></ul></div>
       <div><div class="footer-heading">Guides</div><ul class="footer-links"><li><a href="../guides/">All Guides</a></li><li><a href="../compare/amazon-vs-best-buy.html">Amazon vs Best Buy</a></li></ul></div>
       <div><div class="footer-heading">Company</div><ul class="footer-links"><li><a href="../app/">Get the App</a></li><li><a href="mailto:info@cloudstudiodesign.com">Contact</a></li></ul></div>
     </div>
@@ -188,11 +198,11 @@
 
 <script src="../assets/js/main.js"></script>
 <script>
-function filterDeals(cat, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+function filterDeals(cat,btn){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
-  document.querySelectorAll('.deal-card').forEach(card => {
-    card.style.display = (cat === 'all' || card.dataset.category === cat) ? 'flex' : 'none';
+  document.querySelectorAll('.deal-card').forEach(card=>{
+    card.style.display=(cat==='all'||card.dataset.category===cat)?'flex':'none';
   });
 }
 </script>
