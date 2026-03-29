@@ -21,7 +21,7 @@ const DEALS = [
     tag:      "⚡ Best Value",
     tagClass: "tag-blue",
     category: "electronics",
-    image:    "../assets/images/amazon_fire tv_stick 4K.jpg"
+    image:    "../assets/images/amazon_fire_tv_stick_4K.jpg"
   },
   {
     asin:     "B0CHWRXH8B",
