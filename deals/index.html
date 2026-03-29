@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="no-referrer-when-downgrade">
 <title>Best Amazon Deals Today (2026) | CloudDeals</title>
 <meta name="description" content="The best Amazon deals right now — tracked and verified by CloudDeals. Updated daily. Echo, AirPods, Fire TV, Kindle, and more.">
 <link rel="canonical" href="https://clouddeals.com/deals/">
@@ -14,19 +13,21 @@
 .filter-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px}
 .filter-btn{font-size:13px;font-weight:500;padding:8px 18px;border-radius:100px;border:1.5px solid var(--border2);background:var(--white);color:var(--slate);cursor:pointer;transition:all .15s}
 .filter-btn:hover,.filter-btn.active{background:var(--blue);color:#fff;border-color:var(--blue)}
-/* Image box — emoji fallback if Amazon blocks */
-.deal-img-box{
-  width:100%;height:200px;background:var(--bg2);
+/* Product icon cards — always render, no broken images */
+.deal-icon-wrap{
+  width:100%;height:200px;
   display:flex;align-items:center;justify-content:center;
-  overflow:hidden;position:relative;
-}
-.deal-img-box img{
-  max-width:90%;max-height:90%;
-  object-fit:contain;
+  flex-direction:column;gap:8px;
+  background:linear-gradient(135deg,var(--bg2),var(--blue-lt));
+  font-size:72px;line-height:1;
   transition:transform .3s;
 }
-.deal-card:hover .deal-img-box img{transform:scale(1.04)}
-.deal-fallback{font-size:64px;display:none}
+.deal-card:hover .deal-icon-wrap{transform:scale(1.04)}
+.deal-icon-label{
+  font-family:var(--ff-body);font-size:10px;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--blue);opacity:.7;
+}
 </style>
 </head>
 <body>
@@ -50,13 +51,12 @@
   <div class="container">
     <div class="breadcrumb"><a href="../">Home</a><span>/</span>Deals</div>
     <h1>Today's Best Amazon Deals</h1>
-    <p>All deals verified and linked with our Amazon affiliate tag. Updated daily — every purchase supports CloudDeals at no extra cost to you.</p>
+    <p>All deals verified and linked with our Amazon affiliate tag (clouddeals20-20). Updated daily — every purchase supports CloudDeals at no extra cost to you.</p>
   </div>
 </div>
 
 <section class="section">
   <div class="container">
-
     <div class="filter-bar">
       <button class="filter-btn active" onclick="filterDeals('all',this)">All Deals</button>
       <button class="filter-btn" onclick="filterDeals('electronics',this)">Electronics</button>
@@ -67,13 +67,9 @@
 
     <div class="deal-grid" id="dealGrid">
 
-      <!-- 1. Echo Dot 5th Gen B09B8V1LZ3 IN STOCK ✓ -->
+      <!-- 1. Echo Dot 5th Gen — B09B8V1LZ3 IN STOCK -->
       <a href="https://www.amazon.com/dp/B09B8V1LZ3?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="smart-home">
-        <div class="deal-img-box">
-          <img src="https://images-na.ssl-images-amazon.com/images/I/514FDFbHkrL._AC_SL300_.jpg" alt="Echo Dot 5th Gen"
-            onerror="this.style.display='none';this.nextSibling.style.display='flex'">
-          <div class="deal-fallback">🔊</div>
-        </div>
+        <div class="deal-icon-wrap"><span>🔊</span><span class="deal-icon-label">Smart Speaker</span></div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-orange">🔥 Top Seller</span></div>
           <div class="deal-card-name">Echo Dot (5th Gen, 2022) Smart Speaker with Alexa</div>
@@ -82,43 +78,31 @@
         </div>
       </a>
 
-      <!-- 2. Fire TV Stick 4K B0CJM1GNFQ IN STOCK ✓ -->
-      <a href="https://www.amazon.com/dp/B0CJM1GNFQ?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="electronics">
-        <div class="deal-img-box">
-          <img src="https://images-na.ssl-images-amazon.com/images/I/61HkDPlEkZL._AC_SL300_.jpg" alt="Fire TV Stick 4K"
-            onerror="this.style.display='none';this.nextSibling.style.display='flex'">
-          <div class="deal-fallback">📺</div>
-        </div>
+      <!-- 2. Fire TV Stick 4K Plus NEWEST — B0F7Z4QZTT IN STOCK (4K renamed to 4K Plus) -->
+      <a href="https://www.amazon.com/dp/B0F7Z4QZTT?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="electronics">
+        <div class="deal-icon-wrap"><span>📺</span><span class="deal-icon-label">Streaming Stick</span></div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-blue">⚡ Best Value</span></div>
-          <div class="deal-card-name">Fire TV Stick 4K Streaming Device with Alexa Voice Remote</div>
+          <div class="deal-card-name">Fire TV Stick 4K Plus (Newest Model) — Wi-Fi 6, Alexa+</div>
           <div class="deal-card-retailer">Amazon</div>
           <div class="deal-card-footer"><span class="deal-price">$49.99</span><div class="deal-btn">Buy Now →</div></div>
         </div>
       </a>
 
-      <!-- 3. AirPods Pro 2nd Gen USB-C B0CHWRXH8B IN STOCK ✓ -->
+      <!-- 3. AirPods Pro 2nd Gen USB-C — B0CHWRXH8B IN STOCK -->
       <a href="https://www.amazon.com/dp/B0CHWRXH8B?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="audio">
-        <div class="deal-img-box">
-          <img src="https://images-na.ssl-images-amazon.com/images/I/61SUj2aKoEL._AC_SL300_.jpg" alt="AirPods Pro 2nd Gen"
-            onerror="this.style.display='none';this.nextSibling.style.display='flex'">
-          <div class="deal-fallback">🎧</div>
-        </div>
+        <div class="deal-icon-wrap"><span>🎧</span><span class="deal-icon-label">Earbuds</span></div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-green">🎧 Popular</span></div>
-          <div class="deal-card-name">Apple AirPods Pro (2nd Gen) USB-C MagSafe Case</div>
+          <div class="deal-card-name">Apple AirPods Pro (2nd Gen) USB-C with MagSafe Case</div>
           <div class="deal-card-retailer">Amazon</div>
           <div class="deal-card-footer"><span class="deal-price">$189.00</span><div class="deal-btn">Buy Now →</div></div>
         </div>
       </a>
 
-      <!-- 4. Kindle Paperwhite 2024 B0CFPJYX7P IN STOCK ✓ -->
+      <!-- 4. Kindle Paperwhite 2024 — B0CFPJYX7P IN STOCK -->
       <a href="https://www.amazon.com/dp/B0CFPJYX7P?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="ereader">
-        <div class="deal-img-box">
-          <img src="https://images-na.ssl-images-amazon.com/images/I/61FgFTI8zxL._AC_SL300_.jpg" alt="Kindle Paperwhite 2024"
-            onerror="this.style.display='none';this.nextSibling.style.display='flex'">
-          <div class="deal-fallback">📚</div>
-        </div>
+        <div class="deal-icon-wrap"><span>📚</span><span class="deal-icon-label">E-Reader</span></div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-blue">📚 Editor's Pick</span></div>
           <div class="deal-card-name">Kindle Paperwhite (2024) 16GB — 7" Glare-Free Display</div>
@@ -127,28 +111,20 @@
         </div>
       </a>
 
-      <!-- 5. Ring Video Doorbell Wired B08CKHPP52 IN STOCK ✓ -->
+      <!-- 5. Ring Video Doorbell Wired — B08CKHPP52 IN STOCK -->
       <a href="https://www.amazon.com/dp/B08CKHPP52?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="smart-home">
-        <div class="deal-img-box">
-          <img src="https://images-na.ssl-images-amazon.com/images/I/51nRkFkjl7L._AC_SL300_.jpg" alt="Ring Video Doorbell Wired"
-            onerror="this.style.display='none';this.nextSibling.style.display='flex'">
-          <div class="deal-fallback">🚪</div>
-        </div>
+        <div class="deal-icon-wrap"><span>🚪</span><span class="deal-icon-label">Video Doorbell</span></div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-orange">🏠 Smart Home</span></div>
-          <div class="deal-card-name">Ring Video Doorbell Wired — 1080p HD, Motion Alerts</div>
+          <div class="deal-card-name">Ring Video Doorbell Wired — 1080p HD, Real-Time Alerts</div>
           <div class="deal-card-retailer">Amazon</div>
           <div class="deal-card-footer"><span class="deal-price">$59.99</span><div class="deal-btn">Buy Now →</div></div>
         </div>
       </a>
 
-      <!-- 6. iRobot Roomba 105 B0DX6KZR9T IN STOCK ✓ (replaces discontinued 694) -->
+      <!-- 6. iRobot Roomba 105 — B0DX6KZR9T IN STOCK -->
       <a href="https://www.amazon.com/dp/B0DX6KZR9T?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="electronics">
-        <div class="deal-img-box">
-          <img src="https://images-na.ssl-images-amazon.com/images/I/71GE1aJXQML._AC_SL300_.jpg" alt="iRobot Roomba 105"
-            onerror="this.style.display='none';this.nextSibling.style.display='flex'">
-          <div class="deal-fallback">🤖</div>
-        </div>
+        <div class="deal-icon-wrap"><span>🤖</span><span class="deal-icon-label">Robot Vacuum</span></div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-green">🤖 New Model</span></div>
           <div class="deal-card-name">iRobot Roomba 105 Vac Robot Vacuum — LiDAR Navigation</div>
@@ -157,13 +133,9 @@
         </div>
       </a>
 
-      <!-- 7. Echo Show 5 3rd Gen B09B2SBHQK IN STOCK ✓ (fixed ASIN) -->
+      <!-- 7. Echo Show 5 3rd Gen — B09B2SBHQK IN STOCK -->
       <a href="https://www.amazon.com/dp/B09B2SBHQK?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="smart-home">
-        <div class="deal-img-box">
-          <img src="https://images-na.ssl-images-amazon.com/images/I/71HS0H9GyrL._AC_SL300_.jpg" alt="Echo Show 5 3rd Gen"
-            onerror="this.style.display='none';this.nextSibling.style.display='flex'">
-          <div class="deal-fallback">🖥️</div>
-        </div>
+        <div class="deal-icon-wrap"><span>🖥️</span><span class="deal-icon-label">Smart Display</span></div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-orange">📺 Smart Display</span></div>
           <div class="deal-card-name">Echo Show 5 (3rd Gen, 2023) Smart Display with Alexa</div>
@@ -172,31 +144,23 @@
         </div>
       </a>
 
-      <!-- 8. Echo Studio B084J4MZK8 IN STOCK ✓ -->
-      <a href="https://www.amazon.com/dp/B084J4MZK8?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="audio">
-        <div class="deal-img-box">
-          <img src="https://images-na.ssl-images-amazon.com/images/I/61MFxmSPCJL._AC_SL300_.jpg" alt="Echo Studio"
-            onerror="this.style.display='none';this.nextSibling.style.display='flex'">
-          <div class="deal-fallback">🎵</div>
-        </div>
+      <!-- 8. Echo Dot Max 2025 NEWEST — B0D6SX8VLQ IN STOCK (replaces Echo Studio confusion) -->
+      <a href="https://www.amazon.com/dp/B0D6SX8VLQ?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="audio">
+        <div class="deal-icon-wrap"><span>🎵</span><span class="deal-icon-label">Smart Speaker</span></div>
         <div class="deal-card-body">
-          <div class="deal-card-tag"><span class="tag tag-blue">🔊 Premium Audio</span></div>
-          <div class="deal-card-name">Echo Studio High-Fidelity Smart Speaker with 3D Audio</div>
+          <div class="deal-card-tag"><span class="tag tag-blue">🆕 Newest Model</span></div>
+          <div class="deal-card-name">Echo Dot Max (2025) — Built for Alexa+, 3x Bass, Graphite</div>
           <div class="deal-card-retailer">Amazon</div>
-          <div class="deal-card-footer"><span class="deal-price">$199.99</span><div class="deal-btn">Buy Now →</div></div>
+          <div class="deal-card-footer"><span class="deal-price">$99.99</span><div class="deal-btn">Buy Now →</div></div>
         </div>
       </a>
 
-      <!-- 9. Fire HD 10 2023 B0BHZT5S12 IN STOCK ✓ (replaces discontinued 2021) -->
-      <a href="https://www.amazon.com/dp/B0BHZT5S12?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="electronics">
-        <div class="deal-img-box">
-          <img src="https://images-na.ssl-images-amazon.com/images/I/71PqGMjkroL._AC_SL300_.jpg" alt="Fire HD 10 2023"
-            onerror="this.style.display='none';this.nextSibling.style.display='flex'">
-          <div class="deal-fallback">💻</div>
-        </div>
+      <!-- 9. Fire HD 10 2023 — B0BL5XPDR6 IN STOCK (32GB Ocean color, confirmed available) -->
+      <a href="https://www.amazon.com/dp/B0BL5XPDR6?tag=clouddeals20-20" target="_blank" rel="noopener sponsored" class="deal-card reveal" data-category="electronics">
+        <div class="deal-icon-wrap"><span>💻</span><span class="deal-icon-label">Fire Tablet</span></div>
         <div class="deal-card-body">
           <div class="deal-card-tag"><span class="tag tag-green">💻 Best Tablet Deal</span></div>
-          <div class="deal-card-name">Fire HD 10 (2023) 10.1" Full HD Tablet — 32 GB</div>
+          <div class="deal-card-name">Fire HD 10 (2023) 10.1" Full HD Tablet — 32 GB, Ocean</div>
           <div class="deal-card-retailer">Amazon</div>
           <div class="deal-card-footer"><span class="deal-price">$139.99</span><div class="deal-btn">Buy Now →</div></div>
         </div>
@@ -204,9 +168,7 @@
 
     </div>
 
-    <p style="font-size:11px;color:var(--muted);margin-top:24px;">
-      * Prices subject to change. As an Amazon Associate (clouddeals20-20), CloudDeals earns from qualifying purchases at no extra cost to you.
-    </p>
+    <p style="font-size:11px;color:var(--muted);margin-top:24px;">* Prices subject to change. As an Amazon Associate (clouddeals20-20), CloudDeals earns from qualifying purchases at no extra cost to you.</p>
 
     <div class="app-banner reveal" style="margin-top:48px;">
       <div class="app-banner-icon">📱</div>
@@ -216,7 +178,6 @@
       </div>
       <a href="../app/" class="btn btn-primary">Join Waitlist →</a>
     </div>
-
   </div>
 </section>
 
@@ -248,6 +209,8 @@
         <ul class="footer-links">
           <li><a href="../app/">Get the App</a></li>
           <li><a href="mailto:info@cloudstudiodesign.com">Contact</a></li>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Service</a></li>
         </ul>
       </div>
     </div>
